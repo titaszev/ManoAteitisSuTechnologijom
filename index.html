@@ -2,39 +2,38 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devece-width, initial-scale=1.0" />
     <title>Mano ateitis su technologijomis</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="myHeader">
       <nav>
-        <ul>
-          <li class="button">
-            <i class="fa-solid fa-house"></i>
-            <a href="#pagrindinis">Pagrindinis</a>
-          </li>
+        <div>
+          <a class="homeButton button" href="#pagrindinis"
+            ><i class="fa-solid fa-house"></i>Pagrindinis</a
+          >
+        </div>
 
-          <li class="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <a href="#apie">Apie</a>
-          </li>
+        <div class="groupButtons">
+          <a class="button" href="#apie"
+            ><i class="fa-solid fa-magnifying-glass"></i>Apie</a
+          >
 
-          <li class="button">
-            <i class="fa-solid fa-phone"></i>
-            <a href="#kontaktai">Kontaktai</a>
-          </li>
+          <a class="button" href="#kontaktai"
+            ><i class="fa-solid fa-phone"></i>Kontaktai</a
+          >
 
-          <li class="button">
-            <i class="fa-solid fa-clipboard-question"></i>
-            <a href="#duk">DUK</a>
-          </li>
-        </ul>
+          <a class="button" href="#duk"
+            ><i class="fa-solid fa-clipboard-question"></i>DUK</a
+          >
+        </div>
       </nav>
     </header>
 
     <main>
       <section id="pagrindinis" class="pagrindinis">
-        <h1>Sveiki atvykę į "Mano ateitis su technologijomis"</h1>
+        <h1>"Mano ateitis su technologijomis"</h1>
         <p>
           Dirbantys robotai, pažįstantys veidus, virtualūs asistentai,
           automatinės rekomendacijos ir vaizdo atpažinimo sistemų plėtra - visa
@@ -44,6 +43,7 @@
           sprendimus ir atlikti užduotis, kurioms anksčiau buvo reikalingas
           žmogus.
         </p>
+        <img src="/assets/asimo.jpg" alt="asimo-robot" />
       </section>
 
       <section id="apie">
@@ -51,24 +51,54 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           <h2>Apie</h2>
         </div>
-        <p>
-          AI pažanga pastaraisiais metais yra akivaizdi. Šiuo metu AI jau
-          naudojama daugelyje sričių, įskaitant mediciną, finansus, transportą
-          ir gamybą. Ji taip pat plačiai taikoma žiniatinklyje, kur ji yra
-          atsakinga už tinkamų turinio ir prekių rekomendacijų suteikimą. AI
-          gali greitai analizuoti didžiulius kiekius duomenų ir identifikuoti
-          tendencijas bei šablonus, kurie žmonėms būtų sunkiai pastebimi.
-        </p>
 
-        <p>
-          AI ateitis taip pat yra įspūdinga. Vis labiau sparčiai tobulėjantys
-          mokymosi algoritmai ir galingesni kompiuteriai leis dar labiau plėsti
-          AI galimybes. Tai gali apimti autonominius automobilius, kuriuos
-          galima valdyti be žmogaus įsikišimo, personalizuotus sveikatos
-          priežiūros sprendimus, taip pat kūrybines sritis, tokią kaip menas ir
-          muzika. Be to, AI gali padėti spręsti didelius pasaulinius iššūkius,
-          pavyzdžiui, kovoti su klimato kaita ir pagerinti sveikatos priežiūrą.
-        </p>
+        <div class="container">
+          <div class="card">
+            <h2>Dabartinės AI technologijos:</h2>
+            <p>
+              AI pažanga pastaraisiais metais yra akivaizdi. Šiuo metu AI jau
+              naudojama daugelyje sričių, įskaitant mediciną, finansus,
+              transportą ir gamybą. Ji taip pat plačiai taikoma žiniatinklyje,
+              kur ji yra atsakinga už tinkamų turinio ir prekių rekomendacijų
+              suteikimą. AI gali greitai analizuoti didžiulius kiekius duomenų
+              ir identifikuoti tendencijas bei šablonus, kurie žmonėms būtų
+              sunkiai pastebimi.
+            </p>
+            <img src="assets/currentrobot.jpg" alt="robot" />
+          </div>
+
+          <div class="card">
+            <h2>Ateities AI technologijos:</h2>
+            <p>
+              AI ateitis taip pat yra įspūdinga. Vis labiau sparčiai
+              tobulėjantys mokymosi algoritmai ir galingesni kompiuteriai leis
+              dar labiau plėsti AI galimybes. Tai gali apimti autonominius
+              automobilius, kuriuos galima valdyti be žmogaus įsikišimo,
+              personalizuotus sveikatos priežiūros sprendimus, taip pat
+              kūrybines sritis, tokią kaip menas ir muzika. Be to, AI gali
+              padėti spręsti didelius pasaulinius iššūkius, pavyzdžiui, kovoti
+              su klimato kaita ir pagerinti sveikatos priežiūrą.
+            </p>
+            <img src="assets/Apple-Vision-Pro.jpg" alt="Apple-Vision-Pro" />
+          </div>
+
+          <div class="card">
+            <h2>Kaip tai susiję su manimi?</h2>
+            <p>
+              Mano namuoses yra keletas AI robotų. Šiais laikais beveik visi
+              namai turi AI robotu ar automatinį siurblį, langų valymo robotą,
+              žoliapjovę, telefonų vitualūs asistentai ir daug daugiau. Kai dar
+              labiau pagerės robotai, sumažės reikalavimas įprastam žmogui
+              atlikti namų ruošos darbus. AI technologijom pagerėjus taip pat
+              sumažės reikalavimas daugeliui paprastų darbų. Tai jau galima
+              matyti, kai supranti kad didelė dalis šios svetainės buvo sukurta
+              ne žmogaus, taigi kai technologijos dar daugiau pagerės svetainės
+              bus kuriamos visiškai be žmonių prisidėjimo. Ta pati istorija ir
+              daugeliui kitų darbų ar veiklų ateis su ateities technologijomis.
+            </p>
+            <img src="assets/chatgpt.jpg" alt="ChatGPT" />
+          </div>
+        </div>
       </section>
 
       <section id="kontaktai">
@@ -76,8 +106,15 @@
           <i class="fa-solid fa-phone"></i>
           <h2>Kontaktai</h2>
         </div>
-        <p>Titas Ževžikovas</p>
-        <p>titaszev@gmail.com</p>
+        <!-- pridet iconus prie kontact info !-->
+        <div class="althead">
+          <i class="fa-solid fa-user"></i>
+          <p>Titas Ževžikovas</p>
+        </div>
+        <div class="althead">
+          <i class="fa-solid fa-at"></i>
+          <p>titaszev@gmail.com</p>
+        </div>
       </section>
 
       <section id="duk">
@@ -86,8 +123,7 @@
           <h2>DUK</h2>
         </div>
         <div>
-          <div class="mainHead">
-            <i class="fa-solid fa-arrow-right"></i>
+          <div class="althead">
             <h3>Ką reiškia AI?</h3>
           </div>
           <p>
@@ -95,8 +131,7 @@
             kurios mokosi, priima sprendimus ir atlieka užduotis, kurioms
             anksčiau buvo reikalingas žmogus.
           </p>
-          <div class="mainHead">
-            <i class="fa-solid fa-arrow-right"></i>
+          <div class="althead">
             <h3>Kur AI jau yra naudojamas?</h3>
           </div>
           <p>
@@ -105,8 +140,7 @@
             internete, kur ji gali suteikti tinkamus turinio ir prekių
             rekomendacijas.
           </p>
-          <div class="mainHead">
-            <i class="fa-solid fa-arrow-right"></i>
+          <div class="althead">
             <h3>Kokią pažangą AI pasiekė?</h3>
           </div>
           <p>
@@ -116,8 +150,7 @@
             autonominiams automobiliams valdyti arba personalizuotiems sveikatos
             priežiūros sprendimams teikti.
           </p>
-          <div class="mainHead">
-            <i class="fa-solid fa-arrow-right"></i>
+          <div class="althead">
             <h3>Ką galime tikėtis ateityje iš AI?</h3>
           </div>
           <p>
@@ -128,8 +161,7 @@
             sprendimus globaliems iššūkiams, tokiems kaip klimato kaita arba
             sveikatos priežiūra.
           </p>
-          <div class="mainHead">
-            <i class="fa-solid fa-arrow-right"></i>
+          <div class="althead">
             <h3>Ar AI kelia grėsmę žmoniškumui?</h3>
           </div>
           <p>
@@ -145,8 +177,8 @@
 
     <footer>
       <p>
-        © Titas Ževžikovas 2023 Mano ateitis su technologijomis. Visos teisės
-        saugomos.
+        © Titas Ževžikovas | 2023 | Mano ateitis su technologijomis | Visos
+        teisės saugomos.
       </p>
     </footer>
     <script
