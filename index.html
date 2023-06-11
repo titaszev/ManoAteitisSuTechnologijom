@@ -8,40 +8,33 @@
   </head>
   <body>
     <header id="myHeader">
-      <div>
-        <a class="homeButton button" href="#pagrindinis"
-          ><i class="fa-solid fa-house"></i>&nbsp;Pagrindinis</a
-        >
-      </div>
-
-      <div class="groupButtons">
-        <a class="button" href="#apie"
-          ><i class="fa-fw fa-solid fa-magnifying-glass"></i>&nbsp;Apie</a
-        >
-
-        <a class="button" href="#kontaktai"
-          ><i class="fa-fw fa-solid fa-phone"></i>&nbsp;Kontaktai</a
-        >
-
-        <a class="button" href="#duk"
-          ><i class="fa-fw fa-solid fa-clipboard-question"></i>&nbsp;DUK</a
-        >
+      <div class="container">
+        <div>
+          <a class="home-button button" href="#pagrindinis"
+            ><img src="assets/brain.svg" alt="brain logo"
+          /></a>
+        </div>
+        <!-- MAKE APIE BE DROPDOWN ALWAYS-->
+        <div class="groupButtons">
+          <a class="button" href="#apie">Apie</a>
+          <!-- <a class="button" href="#dabartinės AI technologijos"
+            >dabartinės AI</a
+          >
+          <a class="button" href="#ateities AI technologijos">ateities AI</a>
+          <a class="button" href="#kaip tai susije su manimi"
+            >susije su manimi</a
+          > -->
+          <a class="button" href="#duk">DUK</a>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section id="pagrindinis" class="pagrindinis">
-        <h1>"Mano ateitis su technologijomis"</h1>
-        <p>
-          Dirbantys robotai, pažįstantys veidus, virtualūs asistentai,
-          automatinės rekomendacijos ir vaizdo atpažinimo sistemų plėtra - visa
-          tai yra tik keletas pavyzdžių, kaip dirbtinio intelekto (AI)
-          technologija jau keičia mūsų kasdienį gyvenimą. AI, arba dirbtinis
-          intelektas, yra kompiuterinės sistemos, kurios geba mokytis, priimti
-          sprendimus ir atlikti užduotis, kurioms anksčiau buvo reikalingas
-          žmogus.
-        </p>
-        <img src="assets/asimo.jpg" alt="asimo-robot" />
+        <h1>
+          Girdėjęs apie dirbtinį intelektą? Ar žinai kiek jis jau gali ir galės
+          ateityje?
+        </h1>
       </section>
 
       <section id="apie">
@@ -51,67 +44,73 @@
         </div>
 
         <div class="card-container">
-          <div class="card">
-            <h2>Dabartinės AI technologijos:</h2>
-            <p>
-              AI pažanga pastaraisiais metais yra akivaizdi. Šiuo metu AI jau
-              naudojama daugelyje sričių, įskaitant mediciną, finansus,
-              transportą ir gamybą. Ji taip pat plačiai taikoma žiniatinklyje,
-              kur ji yra atsakinga už tinkamų turinio ir prekių rekomendacijų
-              suteikimą. AI gali greitai analizuoti didžiulius kiekius duomenų
-              ir identifikuoti tendencijas bei šablonus, kurie žmonėms būtų
-              sunkiai pastebimi.
-            </p>
+          <div id="kas ta ai" class="card row">
+            <div>
+              <h2>Kas tas dirbtinis intelektas</h2>
+              <p>
+                Dirbantys robotai, pažįstantys veidus, virtualūs asistentai,
+                automatinės rekomendacijos ir vaizdo atpažinimo sistemų plėtra -
+                visa tai yra tik keletas pavyzdžių, kaip dirbtinio intelekto
+                (AI) technologija jau keičia mūsų kasdienį gyvenimą. AI, arba
+                dirbtinis intelektas, yra kompiuterinės sistemos, kurios geba
+                mokytis, priimti sprendimus ir atlikti užduotis, kurioms
+                anksčiau buvo reikalingas žmogus.
+              </p>
+            </div>
+            <img src="assets/robot.jpg" alt="ai robot" />
+          </div>
+          <div id="dabartinės AI technologijos" class="card rev-row">
+            <div>
+              <h2>Dabartinės AI technologijos:</h2>
+              <p>
+                AI pažanga pastaraisiais metais yra akivaizdi. Šiuo metu AI jau
+                naudojama daugelyje sričių, įskaitant mediciną, finansus,
+                transportą ir gamybą. Ji taip pat plačiai taikoma žiniatinklyje,
+                kur ji yra atsakinga už tinkamų turinio ir prekių rekomendacijų
+                suteikimą. AI gali greitai analizuoti didžiulius kiekius duomenų
+                ir identifikuoti tendencijas bei šablonus, kurie žmonėms būtų
+                sunkiai pastebimi.
+              </p>
+            </div>
             <img src="assets/currentrobot.jpg" alt="robot" />
           </div>
 
-          <div class="card">
-            <h2>Ateities AI technologijos:</h2>
-            <p>
-              AI ateitis taip pat yra įspūdinga. Vis labiau sparčiai
-              tobulėjantys mokymosi algoritmai ir galingesni kompiuteriai leis
-              dar labiau plėsti AI galimybes. Tai gali apimti autonominius
-              automobilius, kuriuos galima valdyti be žmogaus įsikišimo,
-              personalizuotus sveikatos priežiūros sprendimus, taip pat
-              kūrybines sritis, tokią kaip menas ir muzika. Be to, AI gali
-              padėti spręsti didelius pasaulinius iššūkius, pavyzdžiui, kovoti
-              su klimato kaita ir pagerinti sveikatos priežiūrą.
-            </p>
+          <div id="ateities AI technologijos" class="card row">
+            <div>
+              <h2>Ateities AI technologijos:</h2>
+              <p>
+                AI ateitis taip pat yra įspūdinga. Vis labiau sparčiai
+                tobulėjantys mokymosi algoritmai ir galingesni kompiuteriai leis
+                dar labiau plėsti AI galimybes. Tai gali apimti autonominius
+                automobilius, kuriuos galima valdyti be žmogaus įsikišimo,
+                personalizuotus sveikatos priežiūros sprendimus, taip pat
+                kūrybines sritis, tokią kaip menas ir muzika. Be to, AI gali
+                padėti spręsti didelius pasaulinius iššūkius, pavyzdžiui, kovoti
+                su klimato kaita ir pagerinti sveikatos priežiūrą.
+              </p>
+            </div>
             <img src="assets/Apple-Vision-Pro.jpg" alt="Apple-Vision-Pro" />
           </div>
 
-          <div class="card">
-            <h2>Kaip tai susiję su manimi?</h2>
-            <p>
-              Mano namuoses yra keletas AI robotų. Šiais laikais beveik visi
-              namai turi AI robotu ar automatinį siurblį, langų valymo robotą,
-              žoliapjovę, telefonų vitualūs asistentai ir daug daugiau. Kai dar
-              labiau pagerės robotai, sumažės reikalavimas įprastam žmogui
-              atlikti namų ruošos darbus. AI technologijom pagerėjus taip pat
-              sumažės reikalavimas daugeliui paprastų darbų. Tai jau galima
-              matyti, kai supranti kad didelė dalis šios svetainės buvo sukurta
-              ne žmogaus, taigi kai technologijos dar daugiau pagerės svetainės
-              bus kuriamos visiškai be žmonių prisidėjimo. Ta pati istorija ir
-              daugeliui kitų darbų ar veiklų ateis su ateities technologijomis.
-            </p>
+          <div id="kaip tai susije su manimi" class="card rev-row">
+            <div>
+              <h2>Kaip tai susiję su manimi?</h2>
+              <p>
+                Mano namuoses yra keletas AI robotų. Šiais laikais beveik visi
+                namai turi AI robotu ar automatinį siurblį, langų valymo robotą,
+                žoliapjovę, telefonų vitualūs asistentai ir daug daugiau. Kai
+                dar labiau pagerės robotai, sumažės reikalavimas įprastam žmogui
+                atlikti namų ruošos darbus. AI technologijom pagerėjus taip pat
+                sumažės reikalavimas daugeliui paprastų darbų. Tai jau galima
+                matyti, kai supranti kad didelė dalis šios svetainės buvo
+                sukurta ne žmogaus, taigi kai technologijos dar daugiau pagerės
+                svetainės bus kuriamos visiškai be žmonių prisidėjimo. Ta pati
+                istorija ir daugeliui kitų darbų ar veiklų ateis su ateities
+                technologijomis.
+              </p>
+            </div>
             <img src="assets/chatgpt.jpg" alt="ChatGPT" />
           </div>
-        </div>
-      </section>
-
-      <section id="kontaktai">
-        <div class="main-head">
-          <i class="fa-solid fa-phone"></i>
-          <h2>Kontaktai</h2>
-        </div>
-        <!-- pridet iconus prie kontact info !-->
-        <div class="alt-head">
-          <i class="fa-fw fa-solid fa-user"></i>
-          <p>&nbsp;Titas Ževžikovas</p>
-        </div>
-        <div class="alt-head">
-          <i class="fa-fw fa-solid fa-at"></i>
-          <p>&nbsp;titaszev@gmail.com</p>
         </div>
       </section>
 
@@ -120,63 +119,89 @@
           <i class="fa-solid fa-clipboard-question"></i>
           <h2>DUK</h2>
         </div>
-        <div>
-          <div class="alt-head">
-            <h3>Ką reiškia AI?</h3>
+        <div class="card-container">
+          <div class="card">
+            <div class="alt-head">
+              <h3>Ką reiškia AI?</h3>
+            </div>
+            <p>
+              AI reiškia dirbtinį intelektą. Tai yra kompiuterinės sistemos,
+              kurios mokosi, priima sprendimus ir atlieka užduotis, kurioms
+              anksčiau buvo reikalingas žmogus.
+            </p>
           </div>
-          <p>
-            AI reiškia dirbtinį intelektą. Tai yra kompiuterinės sistemos,
-            kurios mokosi, priima sprendimus ir atlieka užduotis, kurioms
-            anksčiau buvo reikalingas žmogus.
-          </p>
-          <div class="alt-head">
-            <h3>Kur AI jau yra naudojamas?</h3>
+          <div class="card">
+            <div class="alt-head">
+              <h3>Kur AI jau yra naudojamas?</h3>
+            </div>
+            <p>
+              AI jau naudojamas daugelyje sričių, įskaitant mediciną, finansus,
+              transportą, gamybą ir žiniasklaidą. Ji taip pat plačiai taikoma
+              internete, kur ji gali suteikti tinkamus turinio ir prekių
+              rekomendacijas.
+            </p>
           </div>
-          <p>
-            AI jau naudojamas daugelyje sričių, įskaitant mediciną, finansus,
-            transportą, gamybą ir žiniasklaidą. Ji taip pat plačiai taikoma
-            internete, kur ji gali suteikti tinkamus turinio ir prekių
-            rekomendacijas.
-          </p>
-          <div class="alt-head">
-            <h3>Kokią pažangą AI pasiekė?</h3>
+          <div class="card">
+            <div class="alt-head">
+              <h3>Kokią pažangą AI pasiekė?</h3>
+            </div>
+            <p>
+              AI pastaraisiais metais ženkliai pažengė. Šiuo metu ji jau gali
+              atlikti sudėtingas užduotis, analizuoti didelius duomenų kiekius
+              ir identifikuoti tendencijas. Taip pat ji gali būti naudojama
+              autonominiams automobiliams valdyti arba personalizuotiems
+              sveikatos priežiūros sprendimams teikti.
+            </p>
           </div>
-          <p>
-            AI pastaraisiais metais ženkliai pažengė. Šiuo metu ji jau gali
-            atlikti sudėtingas užduotis, analizuoti didelius duomenų kiekius ir
-            identifikuoti tendencijas. Taip pat ji gali būti naudojama
-            autonominiams automobiliams valdyti arba personalizuotiems sveikatos
-            priežiūros sprendimams teikti.
-          </p>
-          <div class="alt-head">
-            <h3>Ką galime tikėtis ateityje iš AI?</h3>
+          <div class="card">
+            <div class="alt-head">
+              <h3>Ką galime tikėtis ateityje iš AI?</h3>
+            </div>
+            <p>
+              AI ateitis yra žavinanti. Progresuojant mokymosi algoritmams ir
+              galingesniems kompiuteriams, galima tikėtis, kad AI plėtros
+              srityse bus padaryta dar daugiau pažangos. Tai gali apimti
+              autonominius transporto priemones, išradimus kūrybinių sričių,
+              taip pat sprendimus globaliems iššūkiams, tokiems kaip klimato
+              kaita arba sveikatos priežiūra.
+            </p>
           </div>
-          <p>
-            AI ateitis yra žavinanti. Progresuojant mokymosi algoritmams ir
-            galingesniems kompiuteriams, galima tikėtis, kad AI plėtros srityse
-            bus padaryta dar daugiau pažangos. Tai gali apimti autonominius
-            transporto priemones, išradimus kūrybinių sričių, taip pat
-            sprendimus globaliems iššūkiams, tokiems kaip klimato kaita arba
-            sveikatos priežiūra.
-          </p>
-          <div class="alt-head">
-            <h3>Ar AI kelia grėsmę žmoniškumui?</h3>
+          <div class="card">
+            <div class="alt-head">
+              <h3>Ar AI kelia grėsmę žmoniškumui?</h3>
+            </div>
+            <p>
+              Diskusija dėl AI ir jos įtakos žmonijai yra kompleksiška. Nors AI
+              gali sukelti iššūkių, pavyzdžiui, darbo vietų praradimo galimybę,
+              tačiau taip pat suteikia daug naujų galimybių. Svarbu užtikrinti
+              etinį AI vystymą, kad būtų išvengta nepageidaujamų pasekmių ir
+              užtikrintas teigiamas poveikis visuomenei.
+            </p>
           </div>
-          <p>
-            Diskusija dėl AI ir jos įtakos žmonijai yra kompleksiška. Nors AI
-            gali sukelti iššūkių, pavyzdžiui, darbo vietų praradimo galimybę,
-            tačiau taip pat suteikia daug naujų galimybių. Svarbu užtikrinti
-            etinį AI vystymą, kad būtų išvengta nepageidaujamų pasekmių ir
-            užtikrintas teigiamas poveikis visuomenei.
-          </p>
         </div>
       </section>
     </main>
 
+    <!-- <section id="kontaktai">
+      <div class="main-head">
+        <i class="fa-solid fa-phone"></i>
+        <h2>Kontaktai</h2>
+      </div>
+   
+      <div class="alt-head">
+        <i class="fa-fw fa-solid fa-user"></i>
+        <p>&nbsp;Titas Ževžikovas</p>
+      </div>
+      <div class="alt-head">
+        <i class="fa-fw fa-solid fa-at"></i>
+        <p>&nbsp;titaszev@gmail.com</p>
+      </div>
+    </section> -->
+
     <footer>
       <p>
-        © Titas Ževžikovas | 2023 | Mano ateitis su technologijomis | Visos
-        teisės saugomos.
+        © Titas Ževžikovas | titaszev@gmail.com | 2023 | Mano ateitis su
+        technologijomis | Visos teisės saugomos.
       </p>
     </footer>
     <script
