@@ -18,18 +18,15 @@ h2 {
   padding-top: 70px;
 }
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 10px;
   padding-right: 0;
   padding-left: 0;
   top: 0;
   z-index: 100;
   width: 100%;
-  height: 5vh;
+  height: 40px;
   max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header .container {
@@ -40,18 +37,37 @@ header .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
-}
-
-header div {
-  display: flex;
-  align-items: center;
+  max-height: 100%;
 }
 
 .groupButtons {
   margin-right: 10px;
   gap: 10px;
+  transition: all 0.3s ease-in-out;
 }
-
+.groupButtons--open {
+  transform: translate(0) !important;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger--open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.bar {
+  height: 2px;
+  width: 27px;
+  background: white;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
 .button {
   text-decoration: none;
   font-size: x-large;
@@ -74,9 +90,6 @@ header div {
 }
 #pagrindinis h1 {
   margin-bottom: 10px;
-}
-#pagrindinis p {
-  margin-top: 0;
 }
 main {
   padding-bottom: 20px;
@@ -166,6 +179,22 @@ footer {
 }
 
 @media screen and (min-width: 320px) {
+  .groupButtons {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: translateX(100%);
+  }
+  .groupButtons a {
+    padding: 0 25px;
+  }
+  .hamburger {
+    display: block;
+  }
   main {
     margin: 0 10px;
   }
@@ -178,6 +207,16 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .groupButtons {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    background-color: transparent;
+    transform: translate(0) !important;
+  }
+  .hamburger {
+    display: none;
+  }
   main {
     margin: 0 10px;
   }

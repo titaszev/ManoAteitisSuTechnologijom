@@ -12,7 +12,7 @@ function addScrollTo(name) {
     });
 }
 
-let arr = ["pagrindinis", "apie", "duk"];
+const arr = ["pagrindinis", "apie", "duk"];
 for (let index = 0; index < arr.length; index++) {
   const element = arr[index];
   addScrollTo(element);
@@ -24,10 +24,9 @@ window.onscroll = function () {
 };
 
 // Get the header
-var header = document.getElementById("myHeader");
-console.log(header);
+const header = document.getElementById("myHeader");
 // Get the offset position of the navbar
-var sticky = header.offsetTop;
+const sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
@@ -45,3 +44,23 @@ function scrollSmoothly(offset) {
     behavior: "smooth",
   });
 }
+
+// hamburger
+const groupButtons = document.querySelector(".groupButtons");
+const hamburger = document.querySelector(".hamburger");
+const homeButton = document.querySelector(".home-button");
+
+hamburger.addEventListener("click", () => {
+  groupButtons.classList.toggle("groupButtons--open");
+  hamburger.classList.toggle("hamburger--open");
+});
+
+groupButtons.addEventListener("click", () => {
+  groupButtons.classList.remove("groupButtons--open");
+  hamburger.classList.remove("hamburger--open");
+});
+
+homeButton.addEventListener("click", () => {
+  groupButtons.classList.remove("groupButtons--open");
+  hamburger.classList.remove("hamburger--open");
+});
