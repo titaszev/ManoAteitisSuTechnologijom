@@ -12,7 +12,7 @@ function addScrollTo(name) {
     });
 }
 
-const arr = ["pagrindinis", "apie", "duk"];
+const arr = ["pagrindinis", "apie", "duk", "kontaktai"];
 for (let index = 0; index < arr.length; index++) {
   const element = arr[index];
   addScrollTo(element);

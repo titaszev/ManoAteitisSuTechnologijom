@@ -13,10 +13,6 @@ html {
   height: 100%;
 }
 
-h2 {
-  margin: 5px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -89,6 +85,7 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background: url(assets/gabriel-perez-QkvIvL8wYuw-unsplash.jpg) no-repeat
     center center fixed;
   -webkit-background-size: cover;
@@ -98,12 +95,30 @@ header .container {
   min-height: 100%;
   max-width: 100%;
 }
-#pagrindinis h1 {
-  margin-bottom: 10px;
-  margin-top: 200px;
+#pagrindinis :first-child {
+  padding-top: 150px;
+  margin: 0;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+#pagrindinis p {
+  font-size: small;
+  padding-bottom: 100px;
+}
+.more-button {
+  border: 3px solid #00a67e;
+  color: black;
+  background-color: #00a67e;
+  border-radius: 25px;
+  padding: 10px;
+  text-decoration: none;
 }
 main {
   margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+
+  max-height: 100%;
 }
 img {
   max-height: 100%;
@@ -153,9 +168,8 @@ section {
 .card {
   color: white;
   border: solid;
-
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background: rgba(0, 166, 127, 0.377);
+  border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -166,14 +180,82 @@ section {
   display: flex;
   flex-direction: column;
 }
+.card p {
+  padding: 0 10px;
+}
+.card h2,
+h3 {
+  padding: 0 10px;
+}
+
+.k-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  border: solid;
+  background: rgba(0, 166, 127, 0.377);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #00a67e;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.k-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.k-left textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.k-left input,
+.k-left textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+}
+.k-left form :last-child {
+  background: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #00a67e;
+  color: white;
+  border: 1px solid #00a67e;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.k-left form {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  border: solid white 3px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* footer */
+
 footer {
   background-color: black;
   color: white;
-  padding: 3px;
+  padding: 10px;
   text-align: center;
-  max-height: 1%;
 }
 
+/* scroollll */
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -210,9 +292,11 @@ footer {
   main {
     margin: 0 10px;
   }
-  /* #pagrindinis {
-    background-size: contain;
-  } */
+  .k-form,
+  .k-right {
+    align-items: center;
+  }
+
   .card {
     max-width: 100%;
   }
@@ -232,9 +316,17 @@ footer {
   main {
     margin: 0 10px;
   }
-  /* #pagrindinis {
-    background-size: contain;
-  } */
+  .k-form {
+    flex-direction: row;
+  }
+  .k-right {
+    align-items: end;
+  }
+  .k-left {
+    min-width: 300px;
+    width: 40%;
+  }
+
   .card {
     max-width: 100%;
   }
@@ -265,5 +357,8 @@ footer {
   }
   #apie div {
     padding: 10px;
+  }
+  .k-form {
+    flex-direction: row;
   }
 }
