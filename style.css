@@ -48,6 +48,17 @@ header .container {
   gap: 10px;
   transition: all 0.3s ease-in-out;
 }
+.button {
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 .groupButtons--open {
   transform: translate(0) !important;
 }
@@ -71,14 +82,6 @@ header .container {
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
 }
-.button {
-  text-decoration: none;
-  font-size: x-large;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-}
 
 #pagrindinis {
   color: white;
@@ -99,12 +102,31 @@ header .container {
   padding-top: 150px;
   margin: 0;
   font-weight: bolder;
-  font-size: xx-large;
+}
+#pagrindinis h1 {
+  font-size: 250%;
+  text-shadow: #00a67e 5px;
+}
+#pagrindinis h1::after {
+  font-weight: bolder;
+  content: "DIRBTINĮ INTELEKTĄ (AI)";
+  color: #00a67e;
+  transition: 1s;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px;
+}
+#pagrindinis h1:hover::after {
+  font-weight: bolder;
+  content: "DIRBTINĮ INTELEKTĄ (AI)";
+  color: white;
+  background-color: #00a67e;
+  border-radius: 15px;
 }
 #pagrindinis p {
-  font-size: small;
   padding-bottom: 100px;
 }
+
 .more-button {
   border: 3px solid #00a67e;
   color: black;
@@ -112,12 +134,19 @@ header .container {
   border-radius: 25px;
   padding: 10px;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.more-button:hover {
+  transform: scale(1.1);
+  border: 3px solid #00a67e;
+  color: #00a67e;
+  background-color: transparent;
 }
 main {
   margin: 0 auto;
   max-width: 1200px;
   width: 90%;
-
   max-height: 100%;
 }
 img {
@@ -179,6 +208,11 @@ section {
   transition: 0.5s;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+
+.card:hover {
+  background-color: #00a67f93;
 }
 .card p {
   padding: 0 10px;
@@ -203,6 +237,7 @@ h3 {
   margin-bottom: 40px;
   border-radius: 10px;
   padding: 40px;
+  transition: 0.5s;
 }
 
 .k-right {
@@ -233,17 +268,25 @@ h3 {
   border-radius: 8px;
   background-color: #00a67e;
   color: white;
-  border: 1px solid #00a67e;
+  border: 3px solid #00a67e;
   transition: 0.4s linear;
   cursor: pointer;
+}
+.k-left form :last-child:hover {
+  border: 3px solid #00a67e;
+  color: #00a67e;
+  background-color: transparent;
 }
 .k-left form {
   gap: 1em;
   display: flex;
   flex-direction: column;
-  border: solid white 3px;
+  border: solid #00a67e 3px;
   padding: 25px;
   border-radius: 15px;
+}
+.k-form:hover {
+  background-color: #00a67f5b;
 }
 
 /* footer */
@@ -296,12 +339,23 @@ footer {
   .k-right {
     align-items: center;
   }
-
+  p {
+    padding: 0 10px;
+  }
   .card {
     max-width: 100%;
   }
+  h2 {
+    text-align: center;
+  }
+  #pagrindinis h1:hover::after {
+    font-weight: bolder;
+    content: "DIRBTINĮ INTELEKTĄ (AI)";
+    color: #00a67e;
+    background-color: transparent;
+    border-radius: 15px;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .groupButtons {
     position: static;
@@ -326,9 +380,21 @@ footer {
     min-width: 300px;
     width: 40%;
   }
-
+  p {
+    padding: 0;
+  }
   .card {
     max-width: 100%;
+  }
+  h2 {
+    text-align: left;
+  }
+  #pagrindinis h1:hover::after {
+    font-weight: bolder;
+    content: "DIRBTINĮ INTELEKTĄ (AI)";
+    color: white;
+    background-color: #00a67e;
+    border-radius: 15px;
   }
 }
 
